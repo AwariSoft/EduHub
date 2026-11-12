@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="E:/Project/EduHub/EduHub.Data/EduHub.Data.csproj" />
+  <Project Path="E:/Project/EduHub/EduHub.Services/EduHub.Services.csproj" />
+  <Project Path="E:/Project/EduHub/EduHub.Web/EduHub.Web.csproj" />
+</Solution>
