@@ -1,0 +1,2 @@
+/* auth-footer.css : bottom identity footer, present on all viewports */
+.recovery-footer { display: flex; flex-shrink: 0; align-items: center; justify-content: center; height: 67px; color: var(--muted); font-size: 12px; line-height: 19px; text-align: center; }

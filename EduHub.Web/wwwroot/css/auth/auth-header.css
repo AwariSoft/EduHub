@@ -1,0 +1,22 @@
+/* auth-header.css : top navigation. 64px desktop / 82px tablet & mobile */
+.recovery-header { height: 64px; flex-shrink: 0; }
+.header-inner { height: 100%; max-width: 1296px; width: calc(100% - 144px); }
+.header-context, .header-link { font-size: 13px; line-height: 16px; }
+.header-context { color: var(--muted); }
+.header-link { font-weight: 600; }
+.mobile-wordmark { display: none; }
+
+@media (max-width: 1199.98px) {
+  .recovery-header { height: 82px; }
+  .header-inner { max-width: none; width: calc(100% - 64px); }
+  .header-context { display: none; }
+  .mobile-wordmark { display: inline-flex; align-items: center; gap: 8px; font-size: 28px; line-height: 34px; font-weight: 700; letter-spacing: -.4px; color: var(--ink); }
+  .mobile-wordmark:hover { text-decoration: none; color: var(--ink); }
+  .mobile-wordmark i { color: var(--brand); font-size: 27px; }
+}
+@media (max-width: 575.98px) {
+  .header-inner { width: calc(100% - 40px); }
+}
+@media (max-width: 360px) {
+  .header-inner { width: calc(100% - 28px); }
+}

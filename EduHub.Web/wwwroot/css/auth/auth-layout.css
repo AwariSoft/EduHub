@@ -1,0 +1,17 @@
+/* auth-layout.css : centered main area. 632px visual + 96px gap + 520px card */
+.recovery-main { flex: 1 0 auto; display: flex; align-items: center; }
+.recovery-layout { max-width: 1248px; width: calc(100% - 192px); }
+
+/* At tablet width the left visual disappears and the card centers */
+@media (max-width: 1199.98px) {
+  .recovery-layout { max-width: 520px; width: calc(100% - 64px); }
+}
+@media (max-width: 575.98px) {
+  .recovery-layout { width: calc(100% - 40px); max-width: 350px; }
+}
+@media (max-width: 360px) {
+  .recovery-layout { width: calc(100% - 28px); }
+}
+@media (max-height: 780px) {
+  .recovery-main { padding: 18px 0; }
+}

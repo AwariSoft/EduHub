@@ -1,0 +1,13 @@
+/* auth-brand-panel.css : left brand / illustration panel (desktop only) */
+.learning-intro { width: 100%; max-width: 632px; }
+.brand-mark {
+  display: inline-flex; align-items: center; gap: 8px;
+  white-space: nowrap; color: var(--ink); font-size: 48px;
+  line-height: 58px; font-weight: 700; letter-spacing: -1.2px;
+}
+.brand-mark:hover { color: var(--ink); text-decoration: none; }
+.brand-icon { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; color: var(--brand); font-size: 48px; }
+.brand-accent { color: var(--brand); }
+.learning-tagline { margin-top: 24px; font-size: 26px; font-weight: 700; line-height: 33px; letter-spacing: -.45px; }
+.learning-description { margin-top: 24px; color: var(--body-copy); font-size: 16px; line-height: 26px; }
+.learning-image { display: block; width: 100%; aspect-ratio: 632 / 390; margin-top: 24px; object-fit: cover; border-radius: 16px; }

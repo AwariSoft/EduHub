@@ -1,0 +1,36 @@
+/* auth-base.css : design tokens + global rules shared by all auth pages */
+:root {
+  --brand: #2563eb;
+  --brand-hover: #1d4ed8;
+  --brand-soft: #eff6ff;
+  --ink: #0f172a;
+  --body-copy: #334155;
+  --muted: #64748b;
+  --placeholder: #94a3b8;
+  --border: #e2e8f0;
+  --surface: #fff;
+  --focus-ring: #93c5fd;
+  --card-radius: 12px;
+  --field-radius: 8px;
+}
+html { min-width: 320px; }
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: var(--ink);
+  font: 14px 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(110deg, #dbeafe 0%, #f1f7ff 55%, #f9fbff 100%);
+}
+a { color: var(--brand); text-decoration: none; }
+a:hover { color: var(--brand-hover); text-decoration: underline; }
+a:active { color: #1e40af; }
+:where(a, button, input):focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
+[hidden] { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
